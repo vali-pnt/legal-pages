@@ -27,7 +27,7 @@
       <p>
         <strong>In short:</strong> Gleaner works inside your browser. It reads a web page only when you click its
         toolbar button, and it does not send anything about the pages you visit, or the files you find, to us or anyone
-        else. The only outside service it talks to is ExtensionPay, to check whether you have bought Gleaner Pro.
+        else. The only outside service it talks to is Gumroad, to check your license key if you have bought Gleaner Pro.
       </p>
 
       <h2>What Gleaner does with the pages you open it on</h2>
@@ -61,14 +61,14 @@
               <td>So reopening the popup keeps your choices</td>
             </tr>
             <tr>
-              <td>Whether you have bought Pro, and a count of successful downloads</td>
+              <td>A count of successful downloads</td>
               <td>Chrome's extension storage on your device</td>
-              <td>To unlock Pro features offline, and to ask for a review once, after your fifth download</td>
+              <td>To ask for a review once, after your fifth download</td>
             </tr>
             <tr>
-              <td>A random ExtensionPay key, and your Pro status and email if you buy Pro</td>
-              <td>Chrome's extension storage on your device, and ExtensionPay's servers</td>
-              <td>To confirm your purchase (see below)</td>
+              <td>Your Gleaner Pro license key, if you enter one, and when it was last checked</td>
+              <td>Chrome's extension storage on your device</td>
+              <td>To unlock Pro features, including offline for up to 7 days (see below)</td>
             </tr>
           </tbody>
         </table>
@@ -77,12 +77,14 @@
 
       <h2>Payments</h2>
       <p>
-        Gleaner Pro is sold through <a href="https://extensionpay.com">ExtensionPay</a>, with payments processed by
-        <a href="https://stripe.com/privacy">Stripe</a>. When you choose to upgrade, checkout happens on their web
-        pages; Gleaner never sees your card details. ExtensionPay stores a random identifier for your copy of Gleaner,
-        whether you have paid, and the email address you give at checkout, so that it can confirm your purchase and let
-        you restore it on another browser. Their own privacy policies cover how they handle that information. If you
-        never buy Pro, ExtensionPay holds no email or payment information about you.
+        Gleaner Pro is sold through <a href="https://gumroad.com/privacy">Gumroad</a>, which processes the payment as
+        the seller of record. Checkout happens on Gumroad's own web pages; Gleaner never sees your card details.
+        Gumroad gives you a license key, which you paste into Gleaner. Gleaner then sends that key, with Gleaner's product ID, to
+        Gumroad's license service to check that the purchase is valid and was not refunded, and checks it again about
+        twice a day while you use Pro features. Gleaner does not keep the email address or other purchase details that
+        Gumroad's answer contains. Gumroad's own privacy policy covers the information you give it at checkout. You can
+        remove the key from Gleaner at any time on its Settings page. If you never enter a license key, Gleaner never
+        contacts Gumroad.
       </p>
 
       <h2>Permissions</h2>
@@ -95,7 +97,7 @@
           "ZIP" (to fetch the files you selected from the sites that host them) or "All tabs" (to read your other
           open tabs). You can remove this access at any time on Gleaner's Settings page.
         </li>
-        <li><strong>extensionpay.com:</strong> a small script runs on extensionpay.com only, to notice when a purchase is complete.</li>
+        <li><strong>api.gumroad.com:</strong> to check your license key with Gumroad, as described under Payments. Gleaner reads nothing on this site.</li>
       </ul>
 
       <h2>What Gleaner does not do</h2>
