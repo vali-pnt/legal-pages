@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy – Gleaner</title>
+    <meta name="description" content="How Gleaner, the bulk image downloader for Chrome, handles your data." />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="./"><img src="favicon.png" width="24" height="24" alt="" /> Gleaner</a>
+        <nav><a href="./">Home</a><a href="privacy.html">Privacy</a></nav>
+      </div>
+    </header>
+
+    <main class="wrap narrow doc">
+      <h1>Privacy policy</h1>
+      <p class="meta">Gleaner – Bulk Image Downloader (Chrome extension) · Effective 30 October 2026</p>
+
+      <p>
+        <strong>In short:</strong> Gleaner works inside your browser. It reads a web page only when you click its
+        toolbar button, and it does not send anything about the pages you visit, or the files you find, to us or anyone
+        else. The only outside service it talks to is ExtensionPay, to check whether you have bought Gleaner Pro.
+      </p>
+
+      <h2>What Gleaner does with the pages you open it on</h2>
+      <p>
+        When you click the Gleaner button, it looks through the current tab for images, videos, audio files and links
+        to documents, and shows them to you. If auto-scroll is on, it scrolls the page to load more images and then
+        returns you to where you were. This happens on your device. The list of files is not stored on any server and
+        is not sent anywhere.
+      </p>
+      <p>
+        When you download files, your browser fetches them directly from the websites that host them, as if you had
+        saved them yourself. Gleaner Pro's ZIP feature does the same, then packs the files into one archive on your
+        device.
+      </p>
+
+      <h2>What is stored, and where</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>Data</th><th>Where it's kept</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Your settings (default folder, minimum size, auto-scroll)</td>
+              <td>Chrome's extension storage on your device (synced by Chrome if you use Chrome sync)</td>
+              <td>To remember your preferences</td>
+            </tr>
+            <tr>
+              <td>Filters and selections for an open tab</td>
+              <td>Chrome's session storage on your device; cleared when you close the browser</td>
+              <td>So reopening the popup keeps your choices</td>
+            </tr>
+            <tr>
+              <td>Whether you have bought Pro, and a count of successful downloads</td>
+              <td>Chrome's extension storage on your device</td>
+              <td>To unlock Pro features offline, and to ask for a review once, after your fifth download</td>
+            </tr>
+            <tr>
+              <td>A random ExtensionPay key, and your Pro status and email if you buy Pro</td>
+              <td>Chrome's extension storage on your device, and ExtensionPay's servers</td>
+              <td>To confirm your purchase (see below)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Uninstalling Gleaner removes everything it stored in your browser.</p>
+
+      <h2>Payments</h2>
+      <p>
+        Gleaner Pro is sold through <a href="https://extensionpay.com">ExtensionPay</a>, with payments processed by
+        <a href="https://stripe.com/privacy">Stripe</a>. When you choose to upgrade, checkout happens on their web
+        pages; Gleaner never sees your card details. ExtensionPay stores a random identifier for your copy of Gleaner,
+        whether you have paid, and the email address you give at checkout, so that it can confirm your purchase and let
+        you restore it on another browser. Their own privacy policies cover how they handle that information. If you
+        never buy Pro, ExtensionPay holds no email or payment information about you.
+      </p>
+
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong>Active tab and scripting:</strong> to read the current page, only after you click the Gleaner button.</li>
+        <li><strong>Downloads:</strong> to save the files you select.</li>
+        <li><strong>Storage:</strong> for the data in the table above.</li>
+        <li>
+          <strong>Access to all sites (optional):</strong> requested only when you first use the Pro features
+          "ZIP" (to fetch the files you selected from the sites that host them) or "All tabs" (to read your other
+          open tabs). You can remove this access at any time on Gleaner's Settings page.
+        </li>
+        <li><strong>extensionpay.com:</strong> a small script runs on extensionpay.com only, to notice when a purchase is complete.</li>
+      </ul>
+
+      <h2>What Gleaner does not do</h2>
+      <ul>
+        <li>No analytics, tracking, advertising or fingerprinting.</li>
+        <li>No collection of your browsing history or the content of the pages you visit.</li>
+        <li>No selling or sharing of data with anyone.</li>
+        <li>No remotely loaded code: everything Gleaner runs ships inside the extension.</li>
+      </ul>
+      <p>
+        The use of information received from Chrome APIs adheres to the
+        <a href="https://developer.chrome.com/docs/webstore/program-policies/policies">Chrome Web Store User Data Policy</a>,
+        including the Limited Use requirements.
+      </p>
+
+      <h2>Children</h2>
+      <p>Gleaner is a general-purpose tool and is not directed at children under 13.</p>
+
+      <h2>Changes</h2>
+      <p>
+        If this policy changes, the new version will be posted on this page with a new effective date. A change that
+        affects how your data is handled will also be mentioned in the extension's release notes.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions or requests: open an issue at
+        <a href="https://github.com/vali-pnt/legal-pages/issues">github.com/vali-pnt/legal-pages/issues</a>,
+        or use the contact email on Gleaner's Chrome Web Store page.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <a href="./">Gleaner – Bulk Image Downloader</a>
+        <a href="privacy.html">Privacy policy</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,279 @@
+:root {
+  --bg: #ffffff;
+  --panel: #f5f7f8;
+  --text: #15181d;
+  --muted: #59606c;
+  --border: #e1e5ea;
+  --accent: #0f766e;
+  --accent-text: #ffffff;
+  --hero-from: #0f766e;
+  --hero-to: #134e4a;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121418;
+    --panel: #1b1e24;
+    --text: #e8eaee;
+    --muted: #9aa2b1;
+    --border: #2c313b;
+    --accent: #2dd4bf;
+    --accent-text: #062a26;
+    --hero-from: #0d4f49;
+    --hero-to: #0b2f2c;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+a {
+  color: var(--accent);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.narrow {
+  max-width: 720px;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 56px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 18px;
+  font-size: 15px;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--hero-from), var(--hero-to));
+  color: #fff;
+  padding: 56px 0 64px;
+}
+
+.hero .wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  align-items: center;
+}
+
+@media (min-width: 860px) {
+  .hero .wrap {
+    grid-template-columns: 5fr 7fr;
+  }
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 46px);
+  line-height: 1.1;
+  margin: 12px 0 14px;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  color: #ccfbf1;
+  margin: 0 0 24px;
+  font-size: 19px;
+}
+
+.hero .shot {
+  border-radius: 12px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  display: block;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: #fff;
+  color: #0f3f3a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button.disabled {
+  opacity: 0.85;
+  cursor: default;
+}
+
+.hero .note {
+  font-size: 14px;
+  color: #99f6e4;
+  margin-top: 10px;
+}
+
+section {
+  padding: 48px 0;
+}
+
+section + section {
+  border-top: 1px solid var(--border);
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 19px;
+  margin: 0 0 6px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.plans ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.gallery {
+  display: grid;
+  gap: 20px;
+}
+
+.gallery img {
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.doc h1 {
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.15;
+  margin: 40px 0 6px;
+}
+
+.doc h2 {
+  font-size: 22px;
+  margin: 36px 0 10px;
+}
+
+.doc .meta {
+  color: var(--muted);
+  margin: 0 0 24px;
+}
+
+.doc table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.doc th,
+.doc td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 28px 0 40px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.site-footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.list a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.list strong {
+  display: block;
+}
+
+.list span {
+  color: var(--muted);
+  font-size: 15px;
+}
