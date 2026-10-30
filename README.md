@@ -5,6 +5,7 @@ Public landing pages and privacy policies for Foldwell's browser extensions, ser
 | Product | Landing page | Privacy policy |
 | --- | --- | --- |
 | `ext-bulk-downloader`: Gleaner – Bulk Image Downloader | [`ext-bulk-downloader/`](ext-bulk-downloader/) | [`ext-bulk-downloader/privacy.html`](ext-bulk-downloader/privacy.html) |
+| `ext-fullpage-screenshot`: Scrollwork – Full Page Screenshot | [`ext-fullpage-screenshot/`](ext-fullpage-screenshot/) | [`ext-fullpage-screenshot/privacy.html`](ext-fullpage-screenshot/privacy.html) |
 
 Live at `https://vali-pnt.github.io/legal-pages/<product-id>/` once Pages is on (Settings → Pages → Deploy from a branch → `main` / root).
 
